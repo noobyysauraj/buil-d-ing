@@ -11,3 +11,17 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run
+
+task:
+    name: buil-d-ing
+    timeout_in: 118m
+    container:
+      image: apon77/aosp:latest
+      cpu: 4
+      memory: 8G
+    sync_script:
+      - bash sync
+    build_script:
+      - bash build
+    upload_ccache_script:
+      - bash upload_ccache
