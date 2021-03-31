@@ -1,13 +1,13 @@
 env: # Environt variable to pass to all tasks
     CIRRUS_CLONE_DEPTH: 1 # No need to clone with whole history
-    CIRRUS_WORKING_DIR: "/tmp/ci" # Where to clone repo
+    CIRRUS_WORKING_DIR: "/tmp/rom" # Where to clone repo
    
 
 task:
     name: buil-d-ing
     timeout_in: 118m
     container:
-      image: sauraj77/aosp:latest
+      image: apon77/aosp:latest
       cpu: 4
       memory: 8G
     sync_script:
