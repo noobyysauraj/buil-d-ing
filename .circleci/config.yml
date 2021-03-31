@@ -4,7 +4,6 @@ jobs:
       resource_class: xlarge
 
       task:
-    name: Buildbomt
     sync_script:
       - bash sync
     build_script:
