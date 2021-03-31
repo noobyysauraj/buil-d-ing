@@ -17,6 +17,6 @@ repo sync -c --no-clone-bundle --no-tags --optimized-fetch --prune --force-sync 
 
 
 ##delete these lines, and replace with your own lines of device sauce
-git clone https://github.com/Realme-G95-Series/proprietary_vendor_realme_RMX2151.git vendor/realme/RMX2151 
-git clone https://github.com/ksauraj/device_realme_RMX2151.git device/realme/RMX2151
+git clone https://github.com/noobyysauraj/proprietary_vendor_realme_RMX2151.git vendor/realme/RMX2151 
+git clone https://github.com/noobyysauraj/device_realme_RMX2151.git device/realme/RMX2151
 
