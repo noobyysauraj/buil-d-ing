@@ -4,7 +4,6 @@ jobs:
       resource_class: xlarge
 
       steps:
-      - checkout\
-      - run: ./sync\
-      - run: ./build
+      - run: ./sync ./build
+      
     
