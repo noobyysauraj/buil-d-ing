@@ -3,12 +3,9 @@ jobs:
       image: ubuntu-2004:202101-01 # # recommended linux image - includes Ubuntu 20.04, docker 19.03.13, docker-compose 1.27.4
       resource_class: xlarge
 
-      task:
-    sync_script:
-      - bash sync
-    build_script:
-      - bash build
-    upload_ccache_script:
-      - bash upload_ccache
-
+      steps:
+      - checkout
+      - run: npm install
+      - run: npm run build
+      - run: ./cirrus.yml
     
