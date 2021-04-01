@@ -7,7 +7,7 @@ task:
     name: buil-d-ing
     timeout_in: 118m
     container:
-      image: apon77/aosp:latest
+      image: ubuntu:latest
       cpu: 4
       memory: 8G
     sync_script:
