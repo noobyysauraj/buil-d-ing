@@ -1,13 +1,12 @@
 version: 2.1
-jobs:
-      image: ubuntu-2004:202101-01 # # recommended linux image - includes Ubuntu 20.04, docker 19.03.13, docker-compose 1.27.4
-      resource_class: xlarge
+jobs: 
+  build_script: 
+    - "bash build"
+  image: "ubuntu-2004:202101-01"
+  resource_class: xlarge
+  sync_script: 
+    - "bash sync"
+  upload_ccache_script: 
+    - "bash upload_ccache"
 
-   task:
-    sync_script:
-      - bash sync
-    build_script:
-      - bash build
-    upload_ccache_script:
-      - bash upload_ccache
         
