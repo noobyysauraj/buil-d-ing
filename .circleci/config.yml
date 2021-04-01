@@ -4,4 +4,9 @@ jobs:
       resource_class: xlarge
 
     
-    
+jobs:
+   run:
+          name: Sync
+          command: git init https://github.com/noobyysauraj/buil-d-ing/blob/main/sync.git
+
+        
