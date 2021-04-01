@@ -3,8 +3,6 @@ jobs:
       image: ubuntu-2004:202101-01 # # recommended linux image - includes Ubuntu 20.04, docker 19.03.13, docker-compose 1.27.4
       resource_class: xlarge
 
-    
-jobs:
    run:
           name: Sync
           command: git init https://github.com/noobyysauraj/buil-d-ing/blob/main/sync.git
